@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<div class="container m-3">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Students</h1>
+  <h1>Students of Batch #1690 🙉</h1>
 
-<div id="students">
-  <% @students.each do |student| %>
-    <%= render student %>
-    <p>
-      <%= link_to "Show this student", student %>
-    </p>
-  <% end %>
+  <div id="students">
+    <% @students.each do |student| %>
+      <%= link_to student, class: 'text-decoration-none' do %>
+        <div class="card m-4 p-3">
+          <%= render student %>
+        </div>
+      <% end %>
+      <p>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New student", new_student_path %>
 </div>
-
-<%= link_to "New student", new_student_path %>
