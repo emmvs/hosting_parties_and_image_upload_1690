@@ -8,4 +8,8 @@
     <%= student.bio %>
   </p>
 
+  <p>
+    <%= cl_image_tag student.photo.key, width: 400, crop: :fill if student.photo.key %>
+  </p>
+
 </div>
