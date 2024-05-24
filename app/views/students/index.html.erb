@@ -1,13 +1,9 @@
 <div class="container m-3">
   <p style="color: green"><%= notice %></p>
 
-<div class="card-category"
-  style="height: 400px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dk5glvhr6/image/upload/fl_preserve_transparency/v1716539756/students_m3anmp.jpg?_s=public-apps')"
->
-  <h1 class="text-white">Students of Batch #1690 🙉</h1>
-</div>
-
-
+  <div class="card-category" style="height: 400px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dk5glvhr6/image/upload/fl_preserve_transparency/v1716539756/students_m3anmp.jpg?_s=public-apps')">
+    <h1 class="text-white">Students of Batch #1690 🙉</h1>
+  </div>
 
   <div id="students">
     <% @students.each do |student| %>
